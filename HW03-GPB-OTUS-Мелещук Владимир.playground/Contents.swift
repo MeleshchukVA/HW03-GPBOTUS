@@ -15,11 +15,11 @@ print("-----------")
 // Функция принимает кортеж из числа и строки,
 // приводит число к строке и выводит в консоль результат.
 
-func convertTupleIntStringToString(_ int: Int, _ str: String) {
-    print((String(int), str))
+func convertTupleIntStringToString(_ tuple: (Int, String)) {
+    print(String(tuple.0) + tuple.1)
 }
 
-convertTupleIntStringToString(8800, "5553535")
+convertTupleIntStringToString((8800, "5553535"))
 print("-----------")
 
 // MARK: - Задание 3.
