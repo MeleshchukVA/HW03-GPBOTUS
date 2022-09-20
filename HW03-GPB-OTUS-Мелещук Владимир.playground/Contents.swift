@@ -15,11 +15,11 @@ print("-----------")
 // Функция принимает кортеж из числа и строки,
 // приводит число к строке и выводит в консоль результат.
 
-func convertCortegeIntToString(_ int: Int, _ str: String) {
-    print(String(int) + str)
+func convertTupleIntStringToString(_ int: Int, _ str: String) {
+    print((String(int), str))
 }
 
-convertCortegeIntToString(8800, "5553535")
+convertTupleIntStringToString(8800, "5553535")
 print("-----------")
 
 // MARK: - Задание 3.
@@ -44,7 +44,7 @@ print("-----------")
 // проверить високосный ли он.
 
 func checkLeapYear(_ year: Int) {
-    if year % 4 == 0 {
+    if year % 4 == 0 && year % 100 != 0 {
         print("\(year) год - високосный")
     } else {
         print("\(year) год - невисокосный")
